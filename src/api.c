@@ -27,7 +27,7 @@ yaml_get_version(int *major, int *minor, int *patch)
  * Allocate a dynamic memory block.
  */
 
-YAML_DECLARE(void *)
+void *
 yaml_malloc(size_t size)
 {
     return malloc(size ? size : 1);
